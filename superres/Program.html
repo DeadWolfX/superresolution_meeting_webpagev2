@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/LogoFSMB.png">
+    <title>Program-FNB2024</title>
+    <script src="js/program.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles_program.css">
+</head>
+<body>
+
+    <header>
+        <a href="FNB.html"><img src="img/LogoFSMB1.png" alt="Logo"  class="logo-left" width="200" height="100"></a>
+        <h1>Program</h1>
+        <a href="FNB.html"><img src="img/LogoFSMB.png" alt="Logo" class="logo-right" width="200" height="100"></a>
+    </header>
+
+    <nav>
+        <a href="FNB.html">Home</a>
+        <div class="dropdown">
+            <a  onclick="toggleDropdown()">Program</a>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="Program.html">Main Topics</a>
+                <a href="Speakers.html">Speakers</a>
+                <!-- Agrega más opciones según sea necesario -->
+            </div>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdA4Cc6dY38kOsNHqUaKI2sUoNzx7HPFyKaXUqxU9qOmIQIw/viewform" target="blank">Registration</a>
+        <a href="Venuep.html" >Venue</a>
+        <a href="About.html" >About</a>
+        <a href="https://www.labimeeting.com/"  target="blank">LABI</a>
+       <!-- <div class="dropdown">
+            <a href="#">More</a>
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdA4Cc6dY38kOsNHqUaKI2sUoNzx7HPFyKaXUqxU9qOmIQIw/viewform" target="blank">Registration</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+            </div>
+        </div>-->
+    </nav> 
+   
+    <div class="schedule-container">
+
+
+        <button class="show-schedule-btn" data-date="2024-08-22" data-events='["Thursday, August 22  morning Session 1.","This opening session will delve into Fluorescence Superresolution Microscopy in Bioimaging in the Latin American context, aiming to enlighten the community on the state of the art in this field within the region.","It is designed to display the foundational work in super-resolution microscopy spanning research, education, and bridging the technological and educational gap among imaging scientists.","Discussions will transition from introductory concepts to the advancements and potential of fluorescence nanoscopy in bioimaging within Latin America. Moreover, the session will feature the recent educational endeavors at promoting knowledge exchange, skill development, and fostering collaborations in Latin America, thereby significantly propelling super-resolution microscopy advancement in the region."]'>Super resolution microscopy in Latin America</button>
+        
+        <button class="show-schedule-btn" data-date="2024-08-22" data-events='["Thursday, August 22, evening Session 2","Highlighting the transformational impact of Single Molecule Localization Microscopy (SMLM) on unraveling biological intricacies, this session offers a foray into the molecular realm.","It navigates the imaging evolution from observing isolated blinking or wandering fluorescent molecules to exploring tissues and organismal levels.","The session elucidates SMLM potential as a springboard for innovative diagnostic tools, forming a nexus between foundational research and clinical application.","Prominent methodologies like STORM, PAINT, and SPT, devised to decode cell biology intricacies, will be accentuated, underlining their pivotal role in advancing molecular imaging.","A focal point will be the evolutionary trajectory and prospective horizons of SMLM, particularly in spatial transcriptomics and whole brain imaging.","Additionally, the session explores the promise of SMLM as a clinical diagnostic tool, foreshadowing a future where molecular details significantly bolster disease diagnosis and comprehension."]'>Single molecule localization microscopy</button>
+
+
+        <button class="show-schedule-btn" data-date="2024-08-23" data-events='["Friday, August 23, 2024 morning Session 3","The session explores contemporary advancements in structured light microscopy, instrumental for significant scientific discoveries.","Initially, confocal microscopy was crucial for enhancing contrast through structured illumination.","The focus now transitions towards overcoming the diffraction barrier by channeling more information within the imaging system, refining spatial sampling of signals, or segregating information from its source.","The session highlights the principles and potentials of various innovative techniques, demonstrating their invaluable utility for biological discovery, notably in elevating resolution in confocal microscopy and leading the charge in super-resolution multidimensional imaging.","Methodologies that are redefining benchmarks in super-resolution microscopy will be unfolded.","Attendees will gain insights into their application for probing the nano intricacies of life."]'>Boosting optical fluorescence microscopy with structured light</button>
+
+
+        <button class="show-schedule-btn" data-date="2024-08-22" data-events='["Friday, August 23, 2024 evening Session 4","This session will emphasize widening global access to nanoscale imaging, particularly in resource-limited areas, by utilizing accessible technology like conventional fluorescence microscopes and chemical reagents.","It will explore harnessing brightness fluctuations of fluorescent molecules or isotropically expanding samples to generate sharper super-resolved images.","The introduction of FAIR imaging protocols and image enhancement tools will be highlighted.","These advances aim to unlock high-fidelity multidimensional superresolution microscopy without hefty costs, benefiting the research community.","The session will also venture into integrating machine learning with super-resolution microscopy and merging it with electron microscopy for enhanced imaging, opening avenues for deeper understanding of biological systems at the nanoscale."]'>Expanding worldwide access to super resolution microscopy</button>
+        <!-- Agrega más botones según sea necesario -->
+        
+        <div id="schedule-content" class="schedule-content">
+            <!-- Aquí se mostrarán los eventos -->
+        </div>
+    </div>
+    
+    
+        
+    <button  class="download-btn" >Download preliminary program</button>
+        
+    <div class="image-info" >
+        <p>Image by José Manuel Martínez López</p>
+    </div>
+
+    <div class="foter">
+      <a href="FNB.html"><img src="img/foter.png" alt="foter"></a>
+   </div>
+
+   <div class="copy-right" >
+        <p>© 2024 The Chan Zuckerberg Initiative (CZI). All Rights Reserved.</p>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,410 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background: url('/img/portada.jpg')
+
+}
+
+header {
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+
+header .logo-left {
+    margin-right: 700px; /* Ajusta este valor según sea necesario */
+}
+
+header .logo-right {
+    margin-left: 700px; /* Ajusta este valor según sea necesario */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+
+body:hover #overlay-container {
+    display: block;
+}
+
+.image-info {
+    position: absolute;
+    top: 1400px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    z-index: 2;
+}
+
+.slider-info {
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    z-index: 2;
+}
+
+
+
+.slider img {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 600px; /* Ajusta la altura automáticamente según el ancho */
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.slider-container {
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: hidden;
+}
+
+
+.slider {
+  position: relative;
+  margin-top: 130px;
+  margin-left: 50px;
+  margin-right: 50px;
+  z-index: 1;
+}
+
+.foter img {
+    position: relative;
+    margin-top: 120px;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.copy-right {
+    position: absolute;
+    top: 1650px;
+    left: 40%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    z-index: 2;
+}
+
+.map {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para dispositivos móviles */
+
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+
+    header {
+        padding: 5px; /* Reduzca el relleno del encabezado */
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el encabezado */
+    }
+
+    header .logo-left {
+      margin-right: 0px; /* Ajusta este valor según sea necesario */
+    }
+
+    header .logo-right {
+     margin-left: 0px; /* Ajusta este valor según sea necesario */
+    }
+
+    h1 {
+        margin-right: 0; /* Elimina el margen derecho para el título en el encabezado */
+    }
+
+    nav {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el menú de navegación */
+        text-align: center; /* Centra los elementos del menú de navegación */
+    }
+
+    nav a {
+        width: 91%; /* Ajusta el ancho al 100% del contenedor */
+    }
+
+
+    .image-info {
+        position: absolute;
+        top: 1450px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 10px;
+        display: block;
+        z-index: 2;
+    }
+
+    .slider-info {
+        position: absolute;
+        top: 580px;
+        left: 0%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 10px;
+        display: block;
+        z-index: 2;
+    }
+
+
+    .foter img {
+        position: relative;
+        margin-top: 110px;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+   }
+
+   .slider img {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        height: 300px; /* Ajusta la altura automáticamente según el ancho */
+        margin-left: 0px; 
+         margin-right: 0px;
+   }
+
+   .slider {
+        position: relative;
+        margin-top: 130px;
+        margin-left: 0px;
+        margin-right: 0px;
+        z-index: 1;
+    }
+
+    .slider-container {
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    
+    
+
+    .copy-right {
+        position: absolute;
+        top: 1600px;
+        left: 50px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 10px;
+        display: block;
+        z-index: 2;
+   }
+}
+
+
+
+@media screen and (min-width:700px) {
+  /* Estilos específicos para lap top */
+ 
+  header .logo-left {
+    margin-right: 400px; /* Ajusta este valor según sea necesario */
+  }
+
+  header .logo-right {
+     margin-left: 370px; /* Ajusta este valor según sea necesario */
+  }
+  
+  .slider-info {
+        position: absolute;
+        top: 200px;
+        left: 25%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 20px;
+        display: block;
+        z-index: 2;
+    }
+  
+    .image-info {
+        position: absolute;
+        top: 1200px;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 14px;
+        display: block;
+        z-index: 2;
+    }
+    
+    .foter img {
+       position: relative;
+       margin-top: 110px;
+       width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+       height: auto; /* Mantiene la proporción de la imagen */
+    }
+    
+    .copy-right {
+        position: absolute;
+        top: 1400px;
+        left: 40%;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 14px;
+        display: block;
+        z-index: 2;
+    }
+    
+    .slider img {
+      width: 100%; /* Ajusta el ancho al 100% del contenedor */
+      height: 400px; /* Ajusta la altura automáticamente según el ancho */
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+    
+
+
+  
+}
+
+@media screen and (min-width: 1920px) {
+    header .logo-left {
+        margin-right: 700px; /* Ajusta este valor según sea necesario */
+    }
+
+    header .logo-right {
+        margin-left: 700px; /* Ajusta este valor según sea necesario */
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    nav a:hover {
+        background-color: #555;
+    }
+
+
+
+    body:hover #overlay-container {
+        display: block;
+    }
+
+    .image-info {
+        position: absolute;
+        top: 1400px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+        z-index: 2;
+    }
+
+    .slider-info {
+        position: absolute;
+        top: 200px;
+        left: 35%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+        z-index: 2;
+    }
+
+
+
+    .slider img {
+      width: 100%; /* Ajusta el ancho al 100% del contenedor */
+      height: 600px; /* Ajusta la altura automáticamente según el ancho */
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+
+    .slider-container {
+      position: relative;
+      margin-left: 50px;
+      margin-right: 50px;
+      overflow: hidden;
+    }
+
+
+    .slider {
+      position: relative;
+      margin-top: 130px;
+      margin-left: 50px;
+      margin-right: 50px;
+      z-index: 1;
+    }
+
+    .foter img {
+        position: relative;
+        margin-top: 120px;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .copy-right {
+        position: absolute;
+        top: 1650px;
+        left: 40%;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+        z-index: 2;
+    }
+
+    .map {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}

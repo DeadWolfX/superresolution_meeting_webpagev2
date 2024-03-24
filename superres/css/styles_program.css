@@ -1,0 +1,384 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background: url('/img/portada5.jpeg')
+}
+
+header {
+    background-color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+
+header .logo-left {
+    margin-right: 600px; /* Ajusta este valor según sea necesario */
+}
+
+header .logo-right {
+    margin-left: 750px; /* Ajusta este valor según sea necesario */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.image-info {
+    position: absolute;
+    top: 1000px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+}
+
+
+.schedule-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show-schedule-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px; /* Añade un pequeño espacio entre los botones si lo deseas */
+}
+
+.schedule-content {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.schedule-content.active {
+    display: block;
+}
+
+.show-schedule-btn.active-btn {
+    background-color: darkblue; /* Puedes ajustar el color según tus preferencias */
+}
+
+.foter img {
+    position: absolute;
+    top: 1100px;
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 3;
+}
+
+.copy-right {
+    position: absolute;
+    top: 1300px;
+    left: 40%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    z-index: 3;
+}
+
+.download-btn {
+    background-color: darkblue;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Ajusta el margen según sea necesario */
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+}
+
+.download-btn:active {
+    background-color: purple; /* Morado o el color que desees */
+}
+
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Cambia el color de fondo según sea necesario */
+    min-width: 160px;
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para dispositivos móviles */
+
+    body {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+
+    header {
+        padding: 5px; /* Reduzca el relleno del encabezado */
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el encabezado */
+    }
+
+    header .logo-left {
+      margin-right: 0px; /* Ajusta este valor según sea necesario */
+    }
+
+    header .logo-right {
+     margin-left: 0px; /* Ajusta este valor según sea necesario */
+    }
+
+    h1 {
+        margin-right: 0; /* Elimina el margen derecho para el título en el encabezado */
+    }
+
+    nav {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna para el menú de navegación */
+        text-align: center; /* Centra los elementos del menú de navegación */
+    }
+
+    nav a {
+        width: 91%; /* Ajusta el ancho al 100% del contenedor */
+    }
+
+
+    .image-info {
+        position: absolute;
+        top: 1250px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 10px;
+        display: block;
+    }
+
+    .download-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 1200px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 90px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }    
+
+
+   .foter img {
+        position: absolute;
+        top: 1300px;
+        width: 100%;
+        height: auto;
+        display: block;
+        z-index: 3;
+    }
+
+    .copy-right {
+        position: absolute;
+        top: 1335px;
+        left: 70px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px;
+        display: none;
+        border-radius: 20px;
+        font-size: 10px;
+        display: block;
+        z-index: 3;
+    }
+
+
+}
+
+@media screen and (min-width:700px) {
+
+    header {
+        background-color: #000;
+        text-align: center;
+        display: flex;
+       
+    }
+
+
+    header .logo-left {
+        margin-right: 0%; /* Ajusta este valor según sea necesario */
+        margin-left: 0%;
+    }
+
+    header .logo-right {
+        margin-left: 0%; /* Ajusta este valor según sea necesario */
+        margin-right: 12%;
+    }
+
+    h1 {
+        margin: 0; 
+        margin-left: 28%;
+        margin-right: 30%; 
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+
+    .image-info {
+        position: absolute;
+        top: 100%;
+        left: 1%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+    }
+
+
+    .foter img {
+        position: absolute;
+        top: 110%;
+        width: 100%;
+        height: auto;
+        display: block;
+        z-index: 3;
+    }
+
+
+    .download-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 620px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 500px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }
+
+    .copy-right {
+        position: absolute;
+        top: 126%;
+        left: 35%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+        z-index: 3;
+    }
+  
+}
+
+@media screen and (min-width: 1920px) {
+
+    header {
+        background-color: #000;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+    }
+
+
+    header .logo-left {
+        margin-right: 100px; /* Ajusta este valor según sea necesario */
+    }
+
+    header .logo-right {
+        margin-left: 140px; /* Ajusta este valor según sea necesario */
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+
+    .image-info {
+        position: absolute;
+        top: 600px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+    }
+    
+    .download-btn {
+        position: absolute; /* Cambia a posición fija para que el botón se mantenga en su lugar al hacer scroll */
+        top: 500px; /* Distancia desde la parte superior de la ventana del navegador */
+        right: 890px; /* Distancia desde el borde derecho de la ventana del navegador */
+        z-index: 2; /* Asegúrate de que el botón esté por encima de otros elementos */
+    }    
+
+    .foter img {
+        position: absolute;
+        top: 690px;
+        width: 100%;
+        height: auto;
+        display: block;
+        z-index: 3;
+    }
+
+    .copy-right {
+        position: absolute;
+        top: 870px;
+        left: 40%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        display: block;
+        z-index: 3;
+    }
+  
+}
