@@ -184,7 +184,7 @@ nav a:hover {
 
     .foter img {
             position: relative;
-            margin-top: 2557px;
+            margin-top: 2334px;
             width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
             height: auto; /* Mantiene la proporción de la imagen */
         }
@@ -192,7 +192,7 @@ nav a:hover {
 
     .copy-right {
         position: absolute;
-        top: 3717px;
+        top: 3495px;
         width: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -273,7 +273,7 @@ nav a:hover {
     h1 {
         margin: 0; 
         margin-left: 10%;
-        margin-right: 10%; 
+        margin-right: 5%; 
     }
 
     nav {
@@ -417,7 +417,7 @@ nav a:hover {
 
     .foter img {
         position: relative;
-        margin-top: 3025px;
+        margin-top: 2754px;
         width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
     }
@@ -425,7 +425,7 @@ nav a:hover {
 
     .copy-right {
         position: absolute;
-        top: 3295px;
+        top: 3024px;
         width: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -565,7 +565,7 @@ nav a:hover {
 
     .foter img {
         position: relative;
-        margin-top: 3385px;
+        margin-top: 3080px;
         width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
     }
@@ -594,7 +594,7 @@ nav a:hover {
 
     .copy-right {
         position: absolute;
-        top: 3700px;
+        top: 3398px;
         width: 100%;
         left: 50%;
         transform: translate(-50%, -50%);
